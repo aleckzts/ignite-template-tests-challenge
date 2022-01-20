@@ -2,11 +2,7 @@ import { InMemoryUsersRepository } from "../../../users/repositories/in-memory/I
 import { InMemoryStatementsRepository } from "../../repositories/in-memory/InMemoryStatementsRepository";
 import { GetStatementOperationError } from "./GetStatementOperationError";
 import { GetStatementOperationUseCase } from "./GetStatementOperationUseCase";
-
-enum OperationType {
-  DEPOSIT = 'deposit',
-  WITHDRAW = 'withdraw',
-}
+import { OperationType } from '../../entities/Statement';
 
 let userRepository: InMemoryUsersRepository;
 let statementRepository: InMemoryStatementsRepository;
